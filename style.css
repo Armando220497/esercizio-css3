@@ -143,7 +143,7 @@ main {
 
 }
 
-/* modificato il btn "torna su" */
+/* modificato il btn "torna su" e inserito effetto" */
 .btn-su {
     border: none;
     background-color: white;
@@ -151,9 +151,10 @@ main {
     bottom: 20px;
     right: 20px;
     cursor: pointer;
-    animation: pulse 1s infinite;
-    z-index: 9999;
-
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 /* "keyframes" per dare l'effetto pulse al btn "torna su" */
