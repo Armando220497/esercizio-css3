@@ -1,0 +1,182 @@
+/* background-image per header con immagine di un codice */
+header {
+    background-image: url(./media/bakgroundIMG.jpg);
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+.logo {
+    /* sistemata img del logo */
+    width: 300px;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Stili per i link */
+a {
+    color: black;
+    background-color: #ffed00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cambio colore al passaggio del mouse per i link nav */
+a:hover {
+    color: white;
+    background-color: red;
+}
+
+/* Font e colore per il titolo (h1) */
+#titolo {
+    font-family: "Montserrat", sans-serif;
+    color: #ffed00;
+    background-color: black;
+}
+
+/* centramento titolo articoli in evidenza */
+.Art-in-evidenza {
+    text-align: center;
+    margin: 0%;
+}
+
+/* Colore personalizzato per i titoli h2 */
+.titolih2 {
+    color: rgb(255, 0, 0);
+}
+
+/* Colore personalizzato per i titoli h3 */
+.titolih3 {
+    color: rgb(0, 0, 255);
+}
+
+/* Font per il testo (p) */
+p {
+    font-family: "Reddit Mono", monospace;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    /* Applicato Flexbox per mettere in linea gli elementi */
+    display: flex;
+    /* Distribuito gli elementi lungo la pagina */
+    justify-content: space-around;
+    /* Rimuove i punti elenco */
+    list-style: none;
+    /* tolto margine bianco sopra la nav */
+    margin-top: 0px;
+}
+
+/* custom per bottoni e posizionamento */
+.btn-custom {
+    background-color: #ffed00;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-custom:hover {
+    background-color: red;
+    color: white;
+}
+
+/* custom per bottone Home e posizionamento */
+.btn-home {
+    background-color: #ffed00;
+    cursor: pointer;
+}
+
+.btn-home:hover {
+    background-color: red;
+    color: white;
+}
+
+/* ridimensionamento img articoli */
+.img-art {
+    width: 300px;
+}
+
+/* display flex per gli articoli applicato alla section */
+.flex {
+    display: flex;
+    width: 60%;
+}
+
+article {
+    margin: 10px;
+}
+
+/* inserito aside e ridimensionato */
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 70vh;
+    background-color: #ffed00;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 75%;
+}
+
+
+/* flex per il main */
+main {
+    display: flex;
+}
+
+/* ridimensionata img per l'icona */
+.btn-su img {
+    width: 80px;
+    /* Modifica la larghezza dell'icona */
+    height: 80px;
+    /* Modifica l'altezza dell'icona */
+
+
+}
+
+/* modificato il btn "torna su" */
+.btn-su {
+    border: none;
+    background-color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+    z-index: 9999;
+
+}
+
+/* "keyframes" per dare l'effetto pulse al btn "torna su" */
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* media query per schermi più piccoli */
+@media only screen and (max-width: 600px) {
+    .btn-su img {
+        width: 40px;
+        /* Dimensioni più piccole per schermi inferiori a 600px di larghezza */
+        height: 40px;
+    }
+}
